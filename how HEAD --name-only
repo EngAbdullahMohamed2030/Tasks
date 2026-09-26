@@ -1,0 +1,10 @@
+[33mcommit f1b1ea3c7f0ada6295aae00280bc842a8625ff2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Abdallah Mohammed <engabdullahelshobaky@gmail.com>
+Date:   Sat Sep 26 23:43:25 2026 +0300
+
+    I did Task
+
+ Js/script.js |  43 [32m++++++++++++++++++++[m[31m-----------------------[m
+ Search.pdf   | Bin [31m83993[m -> [32m0[m bytes
+ index.html   |   7 [32m++++++[m[31m-[m
+ 3 files changed, 26 insertions(+), 24 deletions(-)
