@@ -1,31 +1,28 @@
-var grade = prompt("Enter Your Grade : ");
-console.log(grade);
-
-if(grade<=100 && grade>90)
+const tasks =["First Task","Second Task","Third Task","Fourth Task"];
+function dis_tasks()
 {
-    console.log("A");
+    console.clear();
+    tasks.forEach((task,index)=>
+    {
+        console.log(`${index + 1} => ${task}`);
+    })
 }
-else if(grade<=90 && grade>80)
+function add_tasks()
 {
-    console.log("B");
+    let taskName = prompt("Enter New Task");
+    tasks.push(taskName);
+    dis_tasks();
 }
-else if(grade<=80 && grade>70)
+function del_tasks()
 {
-    console.log("C");
+    let taskNum = prompt("Enter Number to delete Task");
+    tasks.splice(taskNum -1 ,1);
+    dis_tasks();
 }
-else if(grade<=70 && grade>60)
+function upd_tasks()
 {
-    console.log("D");
-}
-else if(grade<=60 && grade>=50)
-{
-    console.log("E");
-}
-else if(grade<50 && grade>=0)
-{
-    console.log("F");
-}
-else
-{
-    console.log("Invalid Grade")
+    let taskNum = prompt("Enter Number to update Task");
+    let taskName = prompt("Enter Name to update Task");
+    tasks.splice(taskNum -1 ,1,taskName);
+    dis_tasks();
 }
