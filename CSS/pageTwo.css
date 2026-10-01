@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    div.part-one
+    {
+        div.nav
+        {
+            padding: 15px clamp(5px,4vw,300px);
+            background-color: rgba(51, 51, 51, 1);
+            p
+            {
+                color: rgba(179, 179, 179, 1);
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+            }
+            div.sign
+            {
+                span
+                {
+                    color: #B3B3B3;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 16px;
+                }
+                div.si-gn
+                {
+                    color: #B3B3B3;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 16px;
+                }
+            }
+        }
+        div.search
+        {
+            padding: 15px clamp(15px,6vw,300px);
+            div.first
+            {
+                p
+                {
+                    font-size: 32px;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 500;
+                    letter-spacing: -3%;
+                    color: rgba(0, 38, 3, 1);
+                }
+                div.sea-rch
+                {
+                    img
+                    {
+                        left: 7px;
+                        bottom: 13px;
+                    }
+                    input
+                    {
+                        color: rgba(128, 128, 128, 1);
+                        font-family: "Poppins", sans-serif;
+                        padding:6px 0 6px 45px;
+                        min-width: 400px;
+                    }
+                    button
+                    {
+                        font-weight: 600;
+                        font-family: "Poppins", sans-serif;
+                        background-color: rgba(0, 178, 7, 1);
+                        padding: 6px 0;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+                div.icons
+                {
+                    span.notch
+                    {
+                        color: rgba(204, 204, 204, 1);
+                    }
+                    div.bag
+                    {
+                        span.num
+                        {
+                            background-color: rgba(44, 116, 47, 1);
+                            font-size: 10px;
+                            border-radius: 50%;
+                            width: 16px;
+                            height: 16px;
+                            left: 18px;
+                        }
+                        div.price
+                        {
+                            span.first
+                            {
+                                font-size: 10px;
+                                color: rgba(77, 77, 77, 1);
+                                font-family: "Poppins", sans-serif;
+                                white-space: nowrap;
+                            }
+                            span.second
+                            {
+                                font-size: 10px;
+                                color: rgba(26, 26, 26, 1);
+                                font-family: "Poppins", sans-serif;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+            div.second
+            {
+                border-top: 1px solid rgba(229, 229, 229, 1);
+                div.buttons
+                {
+                    button.main
+                    {
+                        color: rgba(0, 178, 7, 1);
+                    }
+                    button
+                    {
+                        color: rgba(102, 102, 102, 1);
+                    }
+                    a
+                    {
+                        color: rgba(102, 102, 102, 1);
+                    }
+                    a:hover
+                    {
+                        color: rgba(0, 178, 7, 1);
+                    }
+                }
+                span
+                {
+                    color: rgba(26, 26, 26, 1);
+                }
+            }
+        }
+    }
+    div.pages
+    {
+        a
+        {
+            color: rgba(102, 102, 102, 1);
+        }
+        a:hover
+        {
+            color: rgba(0, 178, 7, 1);
+        }
+    }
+    div.part-two
+    {
+        div.top
+        {
+            img
+            {
+                width: clamp(300px,99vw,2800px);
+            }
+        }
+        div.body
+        {
+            background-color: #f9f9f9;
+            div.bo-dy
+            {
+                background-color: white;
+                width: 495px;
+                h3
+                {
+                    font-size: 32px;
+                    font-weight: 600;
+                    font-family: "Poppins", sans-serif;
+                    color: rgba(26, 26, 26, 1);
+                }
+                input.email
+                {
+                    min-width: 472px;
+                    border: 1px solid rgba(230, 230, 230, 1);
+                    color: rgba(153, 153, 153, 1);
+                    font-weight: 400;
+                }
+                div.password
+                {
+                    input.pass
+                    {
+                        min-width: 472px;
+                        border: 1px solid rgba(230, 230, 230, 1);
+                        color: rgba(153, 153, 153, 1);
+                        font-weight: 400;
+                    }
+                    img
+                    {
+                        left: 440px;
+                        bottom: 20px;
+                    }
+                }
+                div.confirm
+                {
+                    input.pass
+                    {
+                        min-width: 472px;
+                        border: 1px solid rgba(230, 230, 230, 1);
+                        color: rgba(153, 153, 153, 1);
+                        font-weight: 400;
+                    }
+                    img
+                    {
+                        left: 440px;
+                        bottom: 20px;
+                    }
+                }
+                div.check
+                {
+                    width: 472px;
+                    span
+                    {
+                        font-weight: 400;
+                        color: rgba(102, 102, 102, 1);
+                    }
+                }
+                button
+                {
+                    background-color: rgba(0, 178, 7, 1);
+                    font-weight: 600;
+                    padding: 14px clamp(80px,12vw,217px);
+                    width: 472px;
+                    white-space: nowrap;
+                }
+                div.sign
+                {
+                    span.si-gn
+                    {
+                        font-weight: 400;
+                        color: rgba(102, 102, 102, 1);
+                    }
+                    span.regi-ster
+                    {
+                        color: rgba(26, 26, 26, 1);
+                    }
+                }
+            }
+        }
+        div.bottom
+        {
+            gap: clamp(5px,5vw,70px);
+            padding: 0 clamp(5px,5vw,300px);
+            background-color: rgba(239, 239, 239, 1);
+            div.col-one
+            {
+                h3
+                {
+                    color: rgba(26, 26, 26, 1);
+                    font-weight: 600;
+                }
+                p
+                {
+                    color: rgba(153, 153, 153, 1);
+                    font-weight: 400;
+                }
+            }
+            div.col-two
+            {
+                input
+                {
+                    color: rgba(128, 128, 128, 1);
+                    padding:10px 0 10px 25px;
+                    width: clamp(100px ,30vw ,436px);
+                    border: 1px solid;
+                    border-top-left-radius:45px ;
+                    border-bottom-left-radius:45px ;
+                }
+                button
+                {
+                    background-color: rgba(0, 178, 7, 1);
+                    margin-left: -40px;
+                    border-radius: 45px;
+                    padding: 10px clamp(5px,4vw,40px);
+                    font-weight: 400;
+                    font-family: "Poppins", sans-serif;
+                }
+            }
+            div.col-three
+            {
+                img.facebook
+                {
+                    background-color: rgba(0, 178, 7, 1);
+                    padding: 11px 15px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    div.part-three
+    {
+        padding: 0 clamp(5px,4vw,300px);
+        background-color: rgba(26, 26, 26, 1);
+        div.top
+        {
+            gap: clamp(20px,4vw,70px);
+            border-bottom: 1px solid rgba(51, 51, 51, 1);
+            div.col-one
+            {
+                h2
+                {
+                    font-weight: 500;
+                    font-size: 32px;
+                    letter-spacing: -3%;
+                }
+                p
+                {
+                    font-weight: 400;
+                    color: rgba(128, 128, 128, 1);
+                    max-width: 336px;
+                }
+                div.contact
+                {
+                    span.two
+                    {
+                        font-weight: 400;
+                        color: rgba(128, 128, 128, 1);
+                    }
+                    span.main
+                    {
+                        border-bottom:1px solid rgba(32, 181, 38, 1);
+                        font-weight: 500;
+                    }
+                }
+            }
+            ul.col-two,.col-three,.col-four,.col-five
+            {
+                row-gap: 8px;
+                a
+                {
+                    font-weight: 400;
+                    color: rgba(153, 153, 153, 1);
+                    font-size: 16px;
+                    text-decoration:none;
+                    white-space: nowrap;
+                }
+                a:hover
+                {
+                    color: green;
+                }
+            }
+        }
+        div.bot-tom
+        {
+            span
+            {
+                color: rgba(128, 128, 128, 1);
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    section
+    {
+        div.part-one
+        {
+            div.nav
+            {
+                p
+                {
+                    font-size: 12px;
+                }
+                div.sign
+                {
+                    span
+                    {
+                        font-size: 12px;
+                    }
+                    div.si-gn
+                    {
+                        span
+                        {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        div.part-three
+        {
+            div.top
+            {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    section
+    {
+        div.part-one
+        {
+            div.nav
+            {
+                p
+                {
+                    font-size: 10px;
+                }
+                div.sign
+                {
+                    span
+                    {
+                        font-size: 10px;
+                    }
+                    div.si-gn
+                    {
+                        span
+                        {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        div.part-three
+        {
+            div.top
+            {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
