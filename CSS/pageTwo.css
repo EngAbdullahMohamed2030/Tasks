@@ -164,7 +164,7 @@ section
             div.bo-dy
             {
                 background-color: white;
-                width: 495px;
+                width: clamp(295px,60vw,495px);
                 h3
                 {
                     font-size: 32px;
@@ -174,7 +174,7 @@ section
                 }
                 input.email
                 {
-                    min-width: 472px;
+                    width: clamp(272px,50vw,472px);
                     border: 1px solid rgba(230, 230, 230, 1);
                     color: rgba(153, 153, 153, 1);
                     font-weight: 400;
@@ -183,14 +183,14 @@ section
                 {
                     input.pass
                     {
-                        min-width: 472px;
+                        width: clamp(272px,50vw,472px);
                         border: 1px solid rgba(230, 230, 230, 1);
                         color: rgba(153, 153, 153, 1);
                         font-weight: 400;
                     }
                     img
                     {
-                        left: 440px;
+                        left: clamp(240px,40vw,440px);
                         bottom: 20px;
                     }
                 }
@@ -198,20 +198,20 @@ section
                 {
                     input.pass
                     {
-                        min-width: 472px;
+                        width: clamp(272px,50vw,472px);
                         border: 1px solid rgba(230, 230, 230, 1);
                         color: rgba(153, 153, 153, 1);
                         font-weight: 400;
                     }
                     img
                     {
-                        left: 440px;
+                        left: clamp(240px,40vw,440px);
                         bottom: 20px;
                     }
                 }
                 div.check
                 {
-                    width: 472px;
+                    width: clamp(272px,50vw,472px);
                     span
                     {
                         font-weight: 400;
@@ -223,7 +223,7 @@ section
                     background-color: rgba(0, 178, 7, 1);
                     font-weight: 600;
                     padding: 14px clamp(80px,12vw,217px);
-                    width: 472px;
+                    width: clamp(272px,50vw,472px);
                     white-space: nowrap;
                 }
                 div.sign
@@ -386,6 +386,13 @@ section
                 display: flex;
                 flex-direction: column;
             }
+            div.bot-tom
+            {
+                span
+                {
+                    font-size: 10px;
+                }
+            }
         }
     }
 }
@@ -422,6 +429,58 @@ section
             {
                 display: flex;
                 flex-direction: column;
+            }
+            div.bot-tom
+            {
+                span
+                {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px)
+{
+    section
+    {
+        div.part-one
+        {
+            div.nav
+            {
+                p
+                {
+                    font-size: 7px;
+                }
+                div.sign
+                {
+                    span
+                    {
+                        font-size: 7px;
+                    }
+                    div.si-gn
+                    {
+                        span
+                        {
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        div.part-three
+        {
+            div.top
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            div.bot-tom
+            {
+                span
+                {
+                    font-size: 7px;
+                }
             }
         }
     }
