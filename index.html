@@ -1,198 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In Page</title>
-    <link rel="stylesheet" href="./CSS/pageOne.css" />
-    <link rel="shortcut icon" href="./images/Main-Icon.svg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./images/NNR.jpg">
     <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <section>
-        <div class="part-one">
-            <div class="nav d-flex align-items-center justify-content-between">
-                <p class="m-0 d-flex align-items-center gap-2"><img src="./images/Map Pin.svg" alt="Map">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
-                <div class="sign d-flex gap-4">
-                    <span class="d-flex align-items-center gap-2">Eng
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24">
-                            <path d="M0 0h24v24H0z" fill="none" />
-                        	<path fill="none" stroke="#B3B3B3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 9l8 8l8-8" />
-                        </svg>
-                    </span>
-                    <span class="d-flex align-items-center gap-2">USD
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24">
-                            <path d="M0 0h24v24H0z" fill="none" />
-                        	<path fill="none" stroke="#B3B3B3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 9l8 8l8-8" />
-                        </svg>
-                    </span>
-                    <span>|</span>
-                    <div class="si-gn d-flex gap-1">
-                        <span>Sign In</span>
-                        <span>/</span>
-                        <span>Sign UP</span>
-                    </div>
-                </div>
+    <section class="w-100 pt-5" style="background-color: #f4f4f4; min-height:100vh">
+        <div class="container bg-white rounded-4 p-3 shadow-sm " style="max-width: 1100px;">
+            <h1 class="text-center fw-bold">Tasks Management System</h1>
+            <div class="Add d-flex gap-3 mb-4">
+                <input type="text" id="taskName" class="form-control fs-6 form-control-lg" placeholder="Enter a task Name">
+                <input type="text" id="taskDesc" class="form-control fs-6 form-control-lg" placeholder="Enter a task Description">
+                <input type="text" id="taskStatus" class="form-control fs-6 form-control-lg" placeholder="Enter a task Status">
+                <button id="add" class="btn btn-primary text-nowrap">+ Add Task</button>
             </div>
-            <div class="search">
-                <div class="first pb-4 d-flex justify-content-between align-items-center">
-                    <p class="d-flex align-items-center gap-2"><img src="./images/Main-Icon.svg" alt="Main-icon">Ecobazar</p>
-                    <div class="sea-rch d-none position-relative d-lg-inline-flex gap-0">
-                        <img class="position-absolute" src="./images/Search.svg" alt="Search">
-                        <input class="fs-5" type="search" aria-label="search" placeholder="Search">
-                        <button class="text-white fs-6 px-4 border-0">Search</button>
-                    </div>
-                    <div class="icons d-flex gap-3">
-                        <img src="./images/Heart.svg" alt="Heart">
-                        <span class="notch fs-4">|</span>
-                        <div class="bag position-relative d-flex gap-2">
-                            <img src="./images/Bag.svg " alt="Bag">
-                            <span class="num text-white position-absolute d-flex justify-content-center align-items-center">2</span>
-                            <div class="price d-flex flex-column justify-content-center">
-                                <span class="first">Shopping cart:</span>
-                                <span class="second">$57.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="second d-flex justify-content-between">
-                    <div class="buttons d-flex align-items-center gap-4 pt-3">
-                        <div class="list d-lg-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 1024 1024">
-	                            <path d="M0 0h1024v1024H0z" fill="none" />
-	                            <path fill="currentColor" d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8m0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8m0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8" />
-                            </svg>
-                        </div>
-                        <button class="main d-none d-lg-inline-flex align-items-center gap-1 bg-white border-0">Home
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="13px" viewBox="0 0 24 24">
-                        	    <path d="M0 0h24v24H0z" fill="none" />
-                        	    <path fill="none" stroke="#00B207" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 9l8 8l8-8" />
-                            </svg>
-                        </button>
-                        <button class="d-none d-lg-inline-flex bg-white border-0 align-items-center gap-1">Shop
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="13px" viewBox="0 0 24 24">
-                        	    <path d="M0 0h24v24H0z" fill="none" />
-                        	    <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 9l8 8l8-8" />
-                            </svg>
-                        </button>
-                        <button class="d-none d-lg-inline-flex bg-white border-0 align-items-center gap-1">Pages
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="13px" viewBox="0 0 24 24">
-                        	    <path d="M0 0h24v24H0z" fill="none" />
-                        	    <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 9l8 8l8-8" />
-                            </svg>
-                        </button>
-                        <button class="d-none d-lg-inline-flex bg-white border-0 align-items-center gap-1">Blog
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="13px" viewBox="0 0 24 24">
-                        	    <path d="M0 0h24v24H0z" fill="none" />
-                        	    <path fill="none" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 9l8 8l8-8" />
-                            </svg>
-                        </button>
-                        <a href="#" class="text-decoration-none d-none d-lg-inline-flex border-0">About Us</a>
-                        <a href="#" class="text-decoration-none d-none d-lg-inline-flex border-0">Contact Us</a>
-                    </div>
-                    <span class="d-flex gap-2 pt-3"><img src="./images/PhoneCall.svg" alt="phone">(219) 555-0114</span>
-                </div>
-            </div>
+            <table class="table text-center align-middle mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    <tr>
+                        <td>1</td>
+                        <td>Task 1</td>
+                        <td>Go to GYM</td>
+                        <td><button class="btn btn-success">Done</button></td>
+                        <td>
+                            <button class="btn btn-primary">Update</button>
+                            <button class="btn btn-secondary">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="pages d-flex justify-content-center gap-5 py-3">
-            <a class="text-decoration-none" href="./index.html">Sign In Page</a>
-            <a class="text-decoration-none" href="./pages/pageTwo.html">Create Account Page</a>
-        </div>
-        <div class="part-two">
-            <div class="top"><img src="./images/Breadcrumbs.svg" alt="Breadcrumbs"></div>
-            <div class="body py-5 d-flex flex-column justify-content-center align-items-center">
-                <div class="bo-dy d-flex flex-column justify-content-center align-items-center">
-                        <h3 class="py-3">Sign In</h3>
-                    <input class="email py-3 ps-3 fs-6" type="text" aria-label="text" placeholder="Email">
-                    <div class="password position-relative pt-2">
-                        <input class="pass py-3 ps-3 fs-6" type="password" aria-label="password" placeholder="Password">
-                        <img class="position-absolute" src="./images/Eye.svg" alt="Eye">
-                    </div>
-                    <div class="check py-3 d-flex flex-row justify-content-between">
-                        <div class="box d-flex justify-content-start">
-                            <div class="b-o-x d-flex">
-                                <label for="check"></label>
-                                <input id="check" type="checkbox">
-                            </div>
-                            <span class="fs-6">Remember me</span>
-                        </div>
-                        <span class="fs-6">Forget Password</span>
-                    </div>
-                    <button class="fs-6 text-white rounded-5 border-0">Login</button>
-                    <div class="sign py-3">
-                        <span class="si-gn fs-6">Don’t have account?</span>
-                        <span class="regi-ster fs-6 fw-bold">Register</span>
-                    </div>
+        <div class="update w-100 h-100 top-0 start-0 position-fixed justify-content-center align-items-center " style="background-color:rgba(0, 0, 0, 0.6);">
+            <form style="max-width: 400px;" class="bg-white rounded-4 shadow p-4 d-flex flex-column gap-3 w-100">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="fw-bold mb-0">Update Task</h4>
+                    <button id="close" type="button" class="btn-close" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="bottom py-3 d-flex align-items-center">
-                <div class="col-one">
-                    <h3 class="fs-3">Subcribe our Newsletter</h3>
-                    <p class="fs-6">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+                <div>
+                    <label for="nameUpdate" class="form-label fw-semibold">Task Name</label>
+                    <input type="text" id="nameUpdate" class="form-control fs-6 form-control-lg" placeholder="Enter a task Name">
                 </div>
-                <div class="col-two d-flex gap-0">
-                    <input class="fs-6" type="search" aria-label="search" placeholder="Your email address">
-                    <button class="text-white fs-6 border-0">Subscribe</button>
+                <div>
+                    <label for="descUpdate" class="form-label fw-semibold">Description</label>
+                    <input type="text" id="descUpdate" class="form-control fs-6 form-control-lg" placeholder="Enter a task Description">
                 </div>
-                <div class="col-three d-flex flex-wrap flex-lg-nowrap gap-4">
-                    <img class="facebook border-0" src="./images/facebook.svg" alt="facebook">
-                    <img src="./images/twitter.svg" alt="twitter">
-                    <img src="./images/pinterest.svg" alt="home">
-                    <img src="./images/instagram.svg" alt="instagram">
+                <div>
+                    <label for="statusUpdate" class="form-label fw-semibold">Status</label>
+                    <input type="text" id="statusUpdate" class="form-control fs-6 form-control-lg" placeholder="Enter a task Status">
                 </div>
-            </div>
-        </div>
-        <div class="part-three">
-            <div class="top py-5 d-flex">
-                <div class="col-one">
-                    <h2 class="text-white d-flex align-items-center gap-2"><img src="./images/Main-Icon.svg" alt="Main-icon">Ecobazar</h2>
-                    <p class="fs-6">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
-                    <div class="contact d-flex gap-3">
-                        <span class="main pb-2 text-white fs-6">(219) 555-0114</span>
-                        <span class="two fs-6">or</span>
-                        <span class="main pb-2 text-white fs-6">Proxy@gmail.com</span>
-                    </div>
+                <div class="d-flex gap-2 justify-content-end">
+                    <button id="cancel" type="button" class="btn btn-secondary">Cancel</button>
+                    <button id="update" type="button" class="btn btn-primary text-nowrap">Update</button>
                 </div>
-                <ul class="col-two d-flex flex-column">
-                    <a class="text-white" href="#">My Account</a>
-                    <a href="#">My Account</a>
-                    <a href="#">Order History</a>
-                    <a href="#">Shoping Cart</a>
-                    <a href="#">Wishlist</a>
-                </ul>
-                <ul class="col-three d-flex flex-column">
-                    <a class="text-white" href="#">Helps</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Faqs</a>
-                    <a href="#">Terms & Condition</a>
-                    <a href="#">Privacy Policy</a>
-                </ul>
-                <ul class="col-four d-flex flex-column">
-                    <a class="text-white" href="#">Proxy</a>
-                    <a href="#">About</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Product</a>
-                    <a href="#">Track Order</a>
-                </ul>
-                <ul class="col-five d-flex flex-column">
-                    <a class="text-white" href="#">Categories</a>
-                    <a href="#">Fruit & Vegetables</a>
-                    <a href="#">Meat & Fish</a>
-                    <a href="#">Bread & Bakery</a>
-                    <a href="#">Beauty & Health</a>
-                </ul>
-            </div>
-            <div class="bot-tom py-4 d-flex justify-content-between">
-                <span>Ecobazar eCommerce © 2021. All Rights Reserved</span>
-                <div class="media d-flex align-items-center gap-2">
-                    <img src="./images/Method=ApplePay.svg" alt="apple-pay">
-                    <img src="./images/visa-logo.svg" alt="visa">
-                    <img src="./images/Method=Discover.svg" alt="method-discover">
-                    <img src="./images/Mastercard.svg" alt="mastercard">
-                    <img src="./images/Cart.svg" alt="cart">
-                </div>
-            </div>
+            </form>
         </div>
     </section>
+    <script src="./Js/script.js"></script>
 </body>
 </html>
