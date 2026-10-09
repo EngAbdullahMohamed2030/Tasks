@@ -1,6 +1,4 @@
-let tasks =[
-    {fir:"Task 1" , sec:"Go to GYM" , thi:"Done"}
-];
+let tasks =[];
 let nam = document.querySelector("#taskName");
 let desc = document.querySelector("#taskDesc");
 let statu=document.querySelector("#taskStatus");
@@ -25,9 +23,11 @@ function addTasks()
 add.addEventListener("click",addTasks);
 function displayTasks()
 {
-    tbody.innerHTML="";
-    tasks.forEach((el,index) =>
-    {
+    if(tasks.length>0)
+        {
+        tbody.innerHTML="";
+        tasks.forEach((el,index) =>
+        {
         let isDone =el.thi.trim().toLowerCase() ==="done";
         tbody.innerHTML+=`
         <tr>
@@ -40,7 +40,11 @@ function displayTasks()
                 <button class="btn btn-danger" onclick="deleteTasks(${index})">Delete</button>
             </td>
         </tr>`
-    })
+        })
+    }
+    else{
+        tbody.innerHTML="No Task Set";
+    }
 }
 function deleteTasks(index)
 {
